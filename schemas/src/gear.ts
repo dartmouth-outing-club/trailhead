@@ -1,34 +1,26 @@
-import * as t from 'type-shift';
+import { User } from "schemas/src/user";
 
-export type Gear =
-	// general
-	'HEAD_LAMP' |
-	'GPS' |
-	// hiking & mountaineering
-	'FRAME_PACK' |
-	'HIKING_BOOTS' |
-	'HIKING_POLES' |
-	// camping
-	'SLEEPING_BAG' |
-	'SLEEPING_PAD' |
-	// winter sports
-	'SKIS' |
-	'SNOW_BOARD';
+export enum KnownGearNames {
+  // general
+  HEAD_LAMP = "Head lamp",
+  GPS = "GPS",
+  // hiking & mountaineering
+  FRAME_PACK = "Frame pack",
+  HIKING_BOOTS = "Hiking boots",
+  HIKING_POLES = "Hiking poles",
+  // camping
+  SLEEPING_BAG = "Sleeping bag",
+  SLEEPING_PAD = "Sleeping pad",
+  STOVE = "Stove",
+  WATER_FILTER = "Water filter",
+  WATER_TABLETS = "Water tablets",
+  // winter sports
+  SKIS = "Skis",
+  SNOW_BOARD = "Snow board",
+}
 
-export const GEAR = new Set([
-	// general
-	'HEAD_LAMP',
-	'GPS',
-	// hiking & mountaineering
-	'FRAME_PACK',
-	'HIKING_BOOTS',
-	'HIKING_POLES',
-	// camping
-	'SLEEPING_BAG',
-	'SLEEPING_PAD',
-	// winter sports
-	'SKIS',
-	'SNOW_BOARD',
-]);
-
-export const gearConverter = t.oneOf(Array.from(GEAR));
+export interface Gear {
+  name: KnownGearNames | string;
+  trippeesWhoNeed: User[];
+  type: "CLOTHING" | "FOOT_WEAR" | "GENERAL";
+}
