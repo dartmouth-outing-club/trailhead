@@ -5,7 +5,15 @@
   "repository": "https://github.com/ziruihao/trailhead",
   "author": "Ziray Hao",
   "license": "None",
+  "private": true,
+  "scripts": {
+    "lint": "prettier --check **/src",
+    "lint:fix": "prettier --write **/src"
+  },
   "workspaces": [
     "schemas"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
 }
