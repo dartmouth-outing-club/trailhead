@@ -1,0 +1,12 @@
+{
+  "name": "trailhead-schemas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ziray Hao",
+  "license": "None",
+  "dependencies": {
+    "prettier": "^2.2.1",
+    "type-shift": "^0.1.0",
+    "typescript": "^4.2.4"
+  }
+}
