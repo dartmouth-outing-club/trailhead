@@ -19,8 +19,15 @@ export enum KnownGearNames {
   SNOW_BOARD = "Snow board",
 }
 
-export interface Gear {
-  name: KnownGearNames | string;
-  trippeesWhoNeed: User[];
-  type: "CLOTHING" | "FOOT_WEAR" | "GENERAL";
+export interface GroupGear {
+  id: string
+  name: KnownGearNames | string
+  qty: number
+}
+
+export interface IndividualGear {
+  id: string
+  name: KnownGearNames | string
+  trippeesWhoNeed: User[]
+  type: 'CLOTHING' | 'FOOT_WEAR' | 'GENERAL'
 }
