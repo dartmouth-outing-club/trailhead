@@ -28,6 +28,6 @@ export interface GroupGear {
 export interface IndividualGear {
   id: string
   name: KnownGearNames | string
-  trippeesWhoNeed: User[]
-  type: 'CLOTHING' | 'FOOT_WEAR' | 'GENERAL'
+  thoseWhoNeed: User[]
+  type: 'CLOTHING' | 'FOOTWEAR' | 'GENERAL'
 }
