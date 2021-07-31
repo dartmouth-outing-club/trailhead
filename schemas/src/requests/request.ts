@@ -1,11 +1,12 @@
 import { User, OPO } from 'schemas/src/user'
+import Identifiable from 'schemas/src/identifiable'
 
 export enum RequestStatus {
   PENDING = 'Pending',
   APPROVED = 'Approved',
   DENIED = 'Denied',
 }
-export interface BaseRequest {
+export interface BaseRequest extends Identifiable {
   requester: User
   vetter: OPO
   requestedFromDate: Date
