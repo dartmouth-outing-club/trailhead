@@ -1,6 +1,6 @@
-import { GearRequest, RequestStatus } from "./requests";
+import { GroupGearRequest, IndividualGearRequest } from './requests'
 
-interface Trip {
-  gearRequestStatus: RequestStatus;
-  gearRequests: GearRequest[];
+export interface Trip {
+  individualGearRequest: GroupGearRequest
+  groupGearRequest: IndividualGearRequest
 }
