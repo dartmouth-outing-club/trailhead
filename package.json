@@ -7,11 +7,12 @@
   "license": "None",
   "private": true,
   "scripts": {
-    "lint": "prettier --check **/src",
-    "lint:fix": "prettier --write **/src"
+    "lint": "prettier --check **/",
+    "lint:fix": "prettier --write **/"
   },
   "workspaces": [
-    "schemas"
+    "schemas",
+    "ui"
   ],
   "devDependencies": {
     "prettier": "^2.3.2"
