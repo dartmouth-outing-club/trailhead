@@ -1,6 +1,7 @@
 {
-  "name": "trailhead-schemas",
+  "name": "trailhead-namespaces",
   "version": "1.0.0",
+  "description": "Trailhead namespaces.",
   "main": "index.js",
   "author": "Ziray Hao",
   "license": "None",

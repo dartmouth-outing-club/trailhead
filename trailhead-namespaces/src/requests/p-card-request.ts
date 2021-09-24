@@ -1,10 +1,10 @@
-import { PCard } from 'schemas/src/p-card'
+import { PCard } from 'trailhead-namespaces/src/p-card'
 import {
   BaseRequest,
   ApprovedRequest,
   DeniedRequest,
-} from 'schemas/src/requests/request'
-import { Trip } from 'schemas/src/trip'
+} from 'trailhead-namespaces/src/requests/request'
+import { Trip } from 'trailhead-namespaces/src/trip'
 
 export interface BasePCardRequest extends BaseRequest {
   linkedTrip: Trip

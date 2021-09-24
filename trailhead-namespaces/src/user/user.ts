@@ -1,4 +1,4 @@
-import Identifiable from 'schemas/src/identifiable'
+import Identifiable from 'trailhead-namespaces/src/identifiable'
 import { Subclub } from '../subclub'
 import { Attendee, Trip, Waitlistee } from '../trip'
 
