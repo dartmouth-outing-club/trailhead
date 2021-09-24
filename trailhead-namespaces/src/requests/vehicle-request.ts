@@ -1,10 +1,10 @@
-import { Vehicle, VehicleTypes } from 'schemas/src/vehicle'
+import { Vehicle, VehicleTypes } from 'trailhead-namespaces/src/vehicle'
 import {
   BaseRequest,
   ApprovedRequest,
   DeniedRequest,
-} from 'schemas/src/requests/request'
-import { Trip } from 'schemas/src/trip'
+} from 'trailhead-namespaces/src/requests/request'
+import { Trip } from 'trailhead-namespaces/src/trip'
 
 export interface BaseVehicleRequest extends BaseRequest {
   linkedTrip?: Trip

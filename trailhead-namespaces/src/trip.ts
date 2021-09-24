@@ -3,10 +3,10 @@ import {
   IndividualGearRequest,
   PCardRequest,
   VehicleRequest,
-} from 'schemas/src/requests'
-import Identifiable from 'schemas/src/identifiable'
-import { Subclub } from 'schemas/src/subclub'
-import { Leader, OPO, User } from 'schemas/src/user'
+} from 'trailhead-namespaces/src/requests'
+import Identifiable from 'trailhead-namespaces/src/identifiable'
+import { Subclub } from 'trailhead-namespaces/src/subclub'
+import { Leader, OPO, User } from 'trailhead-namespaces/src/user'
 import { IndividualGear } from './gear'
 import { KnownLocations } from './location'
 

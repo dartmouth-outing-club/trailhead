@@ -1,5 +1,5 @@
-import { User } from 'schemas/src/user'
-import Identifiable from 'schemas/src/identifiable'
+import { User } from 'trailhead-namespaces/src/user'
+import Identifiable from 'trailhead-namespaces/src/identifiable'
 
 export enum KnownGearNames {
   // general

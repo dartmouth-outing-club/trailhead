@@ -11,7 +11,7 @@
     "lint:fix": "prettier --write **/"
   },
   "workspaces": [
-    "schemas",
+    "trailhead-namespaces",
     "ui"
   ],
   "devDependencies": {
