@@ -12,7 +12,7 @@
   },
   "workspaces": [
     "trailhead-namespaces",
-    "ui"
+    "trailhead-ui"
   ],
   "devDependencies": {
     "prettier": "^2.3.2"
