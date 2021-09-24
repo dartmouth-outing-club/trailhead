@@ -12,16 +12,16 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
-    "@storybook/addon-actions": "^6.3.6",
-    "@storybook/addon-essentials": "^6.3.6",
-    "@storybook/addon-links": "^6.3.6",
-    "@storybook/react": "^6.3.6",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "babel-loader": "^8.2.2",
     "typescript": "^4.3.5",
     "trailhead-namespaces": "1.0.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006 -c src/.storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c src/.storybook"
   }
 }
